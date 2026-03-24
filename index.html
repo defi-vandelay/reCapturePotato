@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reCAPTCHA Potato Parody</title>
+    <link rel="stylesheet" href="all.css">
+  </head>
+  <body>
+    <!-- BUTTON -->
+    <div id="b-grid-container">
+      <div id="b-col1">
+        <button id="b-col1-item" type="button" title="Checkbox"></button>
+        <div id="b-spinner">
+          <svg width="28" height="28" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M33.5152 18C34.8875 18 36.0176 16.8823 35.8288 15.5231C35.6187 14.011 35.2166 12.5283 34.6298 11.1117C33.7252 8.92784 32.3994 6.94353 30.7279 5.27208C29.0565 3.60062 27.0722 2.27475 24.8883 1.37017C23.4717 0.783374 21.989 0.381311 20.4769 0.171234C19.1177 -0.0176059 18 1.11247 18 2.48478C18 3.85709 19.1223 4.94566 20.4698 5.20576C21.3299 5.37181 22.1733 5.62458 22.9865 5.96145C24.5675 6.61629 26.0039 7.5761 27.2139 8.78609C28.4239 9.99608 29.3837 11.4325 30.0386 13.0135C30.3754 13.8267 30.6282 14.6701 30.7942 15.5302C31.0543 16.8777 32.1429 18 33.5152 18Z" fill="#70A2F5"/>
+          </svg>
+        </div>
+      </div>
+      <div id="b-col2">
+        <p id="b-col2-item">I am a robot</p>
+      </div>
+      <div id="b-col3">
+        <div id="b-col3-logo"></div>
+        <p class="b-col3-item" id="b-col3-txt">reCAPTCHA</p>
+        <a class="b-col3-item" id='b-col3-link'>Privacy - Terms</a>
+      </div>
+    </div>
+
+    <div class="q-triangle" id="outer"></div>
+    <div class="q-triangle" id="inner"></div>
+    <div id="q-grid-container" class="q">
+      <div id="q-row1" class="q">
+        <p class="q q-toptext1">Select all <span id="q-type1" class="q">squares with</span>
+          <span id="q-type2" class="q">images with</span></p>
+        <p class="q q-toptext2" id="q-identifier"></p>
+      </div>
+      <div class="q" id="q-row2">
+        <div class="q q-img" id="img01"></div>
+        <div class="q q-img" id="img02"></div>
+        <div class="q q-img" id="img03"></div>
+        <div class="q q-img" id="img04"></div>
+        <div class="q q-img" id="img05"></div>
+        <div class="q q-img" id="img06"></div>
+        <div class="q q-img" id="img07"></div>
+        <div class="q q-img" id="img08"></div>
+        <div class="q q-img" id="img09"></div>
+      </div>
+      <div class="q" id="feedback-msg"></div>
+      <div class="q" id="q-row3">
+        <div class="q row3icon" id="refresh"></div>
+        <div class="q row3icon" id="audio"></div>
+        <div class="q row3icon" id="info"></div>
+        <button class="q button" id="verify-button" type="button">VERIFY</button>
+      </div>
+    </div>
+    <div id="results-block">
+      <p id="results-txt">
+      Authenication Unsuccessful<br>
+      User is either a robot or a potato<br><br>
+      </p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
